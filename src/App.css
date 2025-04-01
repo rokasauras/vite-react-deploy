@@ -139,20 +139,35 @@ section p {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-
   min-height: 100vh;
-  background-image: url('/hero.jpg');
+  background-image: url('/hero.jpg'); /* Base image underneath */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   overflow: hidden;
   color: white;
+  text-align: center;
 }
 
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url('/overlay.jpg'); /* 👈 your second image here */
+  background-size: cover;
+  background-position: center;
+  mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent 100px, black 150px);
+  -webkit-mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent 100px, black 150px);
+  pointer-events: none;
+  transition: mask-image 0.1s;
+  z-index: 2;
+}
+
+.home-hero:hover .image-overlay {
+  mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent 100px, black 150px);
+  -webkit-mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent 100px, black 150px);
+}
 .home-hero::before {
   content: "";
   position: absolute;
