@@ -1,54 +1,52 @@
-# React + TypeScript + Vite
+# 🚀 Portfolio – Rokas Jelinskas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio, built to showcase my work as a full-stack developer and data scientist with a focus on frontend engineering. This project demonstrates my skills in **TypeScript**, **React**, **Node.js**, and product-focused design thinking.
 
-Currently, two official plugins are available:
+![screenshot](./public/preview.jpg) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 About
 
-## Expanding the ESLint configuration
+This portfolio was designed and developed to serve as both a technical demonstration and a personal landing site. Beyond the visuals, it highlights my ability to:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Build modern, scalable UIs with React and TypeScript
+- Apply clean, responsive layouts using custom CSS (no frameworks)
+- Translate product intuition into smooth, purposeful UX
+- Deploy production-ready apps using GitHub Pages and Vite
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🌐 Live Site
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+▶️ **[View Portfolio](https://rokasauras.github.io/vite-react-deploy/)**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Deployed via GitHub Pages using GitHub Actions.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## ⚙️ Tech Stack
+
+- **Framework**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Language**: TypeScript
+- **Styling**: Manual CSS (no Tailwind or Bootstrap)
+- **Deployment**: GitHub Pages + Actions
+- **Routing**: React Router DOM
+
+## ✨ Features
+
+- Custom spotlight effect using CSS masks + pointer tracking
+- Fully responsive layout and scrollable hero section
+- Dark theme design with translucent header
+- Simple routing with three core views: Home, Projects, Blog
+- Clean, scalable structure suitable for extension
+
+## 🗂️ Structure
+
+```bash
+├── src/
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── Projects.tsx
+│   │   └── Blog.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── App.css
+├── public/
+│   └── hero.jpg (and other images)
+├── index.html
+└── README.md
