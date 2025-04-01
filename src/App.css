@@ -154,14 +154,14 @@ section p {
 .image-overlay {
   position: absolute;
   inset: 0;
-  background-image: url('/overlay.jpg'); /* 👈 your second image here */
+  background-image: url('/overlay.jpg'); /* your actual overlay image */
   background-size: cover;
   background-position: center;
-  mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent 100px, black 150px);
-  -webkit-mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent 100px, black 150px);
   pointer-events: none;
-  transition: mask-image 0.1s;
   z-index: 2;
+
+  mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent 150px, black 300px);
+  -webkit-mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent 150px, black 300px);
 }
 
 .home-hero:hover .image-overlay {
@@ -193,8 +193,48 @@ section p {
   color: #ddd;
 }
 
+.trail-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  will-change: transform;
+  contain: layout;
+}
+
+.trail-mask {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  animation: fade-out 1s ease-out forwards;
+  z-index: 2;
+}
 
 
+.spotlight-trail {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0));
+  transform: translate(-50%, -50%);
+  animation: fade-out 1s ease-out forwards;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  filter: blur(2px);
+}
+
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
 
 @keyframes logo-spin {
   from {
