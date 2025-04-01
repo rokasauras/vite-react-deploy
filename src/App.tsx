@@ -1,5 +1,4 @@
-// src/App.tsx
-import { Link, Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
@@ -19,14 +18,12 @@ export default function App() {
         </div>
       </header>
 
-      <main className="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="*" element={<Home />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<div className="main-content"><Projects /></div>} />
+        <Route path="/blog" element={<div className="main-content"><Blog /></div>} />
+        <Route path="*" element={<Home />} />
+      </Routes>
     </>
   );
 }
