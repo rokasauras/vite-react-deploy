@@ -1,5 +1,6 @@
 {
   "name": "gitfrontend",
+  "homepage": "https://rokasauras.github.io/vite-react-deploy",
   "private": true,
   "version": "0.0.0",
   "type": "module",
