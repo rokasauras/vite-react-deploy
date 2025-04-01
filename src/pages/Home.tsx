@@ -1,5 +1,3 @@
-// src/pages/Home.tsx
-
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -18,7 +16,6 @@ export default function Home() {
     };
 
     const animate = () => {
-      // Smooth easing — adjust 0.1 for more/less lag
       currentX += (targetX - currentX) * 0.015;
       currentY += (targetY - currentY) * 0.015;
 
@@ -37,13 +34,22 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="home-hero">
-      <div className="trail-container" />
-      <div className="image-overlay" />
-      <div className="hero-content">
-        <h1>Hi, I’m Rokas</h1>
-        <p>Full-stack developer & data scientist</p>
-      </div>
-    </section>
+    <>
+      <section className="home-hero">
+        <div className="image-overlay" />
+        <div className="hero-content">
+          <h1>Hi, I’m Rokas</h1>
+          <p>Full-stack developer & data scientist</p>
+        </div>
+      </section>
+
+      <section className="after-hero">
+        {/* Background is applied here */}
+        <div className="main-content">
+          <h2>Scroll Section</h2>
+          <p>This is the content below the hero, styled with a full-width dark background.</p>
+        </div>
+      </section>
+    </>
   );
 }
