@@ -9,7 +9,7 @@ export default function App() {
     <>
       <header className="app-header">
         <div className="header-inner">
-          <h1 className="site-title">Rokas Jelinskas</h1>
+          <h1 className="site-title">Portfolio</h1>
           <nav className="nav-links">
             <Link to="/">Home</Link>
             <Link to="/projects">Projects</Link>

@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #202930;
+  background-color: #202830;
   color: #f0f0f0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -154,7 +154,7 @@ section p {
 .after-hero {
   width: 100%;
   min-height: 100vh;
-  background-color: #202930;
+  background-color: #202830;
   padding: 4rem 2rem;
   box-sizing: border-box;
   overflow: hidden;
@@ -183,10 +183,7 @@ section p {
   -webkit-mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent 150px, black 300px);
 }
 
-.home-hero:hover .image-overlay {
-  mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent 100px, black 150px);
-  -webkit-mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent 100px, black 150px);
-}
+
 .home-hero::before {
   content: "";
   position: absolute;
