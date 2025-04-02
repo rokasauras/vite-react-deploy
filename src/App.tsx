@@ -9,11 +9,11 @@ export default function App() {
     <>
       <header className="app-header">
         <div className="header-inner">
-          <h1 className="site-title">Portfolio</h1>
+          <h1 className="site-title">PORTFOLIO</h1>
           <nav className="nav-links">
-            <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/blog">Blog</Link>
+            <Link to="/">HOME</Link>
+            <Link to="/projects">PROJECTS</Link>
+            <Link to="/blog">BLOG</Link>
           </nav>
         </div>
       </header>

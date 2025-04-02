@@ -38,7 +38,7 @@ export default function Home() {
       <section className="home-hero">
         <div className="image-overlay" />
         <div className="hero-content">
-          <h1>Hi, I’m Rokas</h1>
+          <h1>Hi! I’m Rokas</h1>
           <p>Developer & ML Builder with Product Vision</p>
         </div>
       </section>

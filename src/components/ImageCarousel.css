@@ -1,0 +1,36 @@
+/* src/components/ImageCarousel.css */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #333;
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-controls button {
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+  }
+  
