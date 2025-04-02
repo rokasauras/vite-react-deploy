@@ -97,7 +97,7 @@ section p {
 /* --- Home Page Styling --- */
 .home-section {
   padding: 2rem 1rem;
-  background-color: #111;
+  background-color: #202830;
   text-align: center;
 }
 
@@ -137,7 +137,7 @@ section p {
 }
 
 .project-card:hover {
-  background-color: #202830;
+  background-color: #2a2a2a;
 }
 
 /* --- Hero Section --- */
