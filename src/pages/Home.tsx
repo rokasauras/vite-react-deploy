@@ -39,7 +39,7 @@ export default function Home() {
         <div className="image-overlay" />
         <div className="hero-content">
           <h1>Hi, I’m Rokas</h1>
-          <p>Full-stack developer & data scientist</p>
+          <p>Developer & ML Builder with Product Vision</p>
         </div>
       </section>
 
@@ -47,7 +47,7 @@ export default function Home() {
         {/* Background is applied here */}
         <div className="main-content">
           <h2>Scroll Section</h2>
-          <p>This is the content below the hero, styled with a full-width dark background.</p>
+          <p>This content will be for Projects and Blogs</p>
         </div>
       </section>
     </>
