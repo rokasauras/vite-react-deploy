@@ -97,7 +97,7 @@ section p {
 /* --- Home Page Styling --- */
 .home-section {
   padding: 2rem 1rem;
-  background-color: #202830;
+  background-color: #111;
   text-align: center;
 }
 
@@ -269,12 +269,7 @@ section p {
   cursor: pointer;
 }
 
-.carousel-image {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  display: block;
-}
+
 
 /* Responsive nav */
 @media (max-width: 768px) {
@@ -288,7 +283,7 @@ section p {
     position: absolute;
     top: 100%;
     right: 1rem;
-    background: rgba(20, 20, 20, 0.95);
+    background: rgba(39, 95, 43, 0.7);
     padding: 1rem;
     border-radius: 8px;
   }
@@ -329,5 +324,44 @@ section p {
 
   .hero-content p {
     font-size: 1rem;
+  }
+}
+
+.tech-carousel {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 1rem 0;
+  background: #202830; /* or match your page background */
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-left 30s linear infinite;
+  align-items: center;
+  width: max-content;          /* Natural width */
+  max-width: 100vw;            /* Prevents overflow */
+  box-sizing: border-box;
+}
+
+.carousel-track img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(1.2);
+  transition: filter 0.3s;
+}
+
+.carousel-track img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

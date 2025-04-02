@@ -42,6 +42,22 @@ export default function Home() {
           <p>Developer & ML Builder with Product Vision</p>
         </div>
       </section>
+  
+      <section className="tech-carousel">
+        <div className="carousel-track">
+          <img src="/vite-react-deploy/tech/react.png" alt="Test" />
+
+          <img src="/vite-react-deploy/tech/typescript.png" alt="TypeScript" />
+          <img src="/vite-react-deploy/tech/nodejs.png" alt="Node.js" />
+          <img src="/vite-react-deploy/tech/python.png" alt="Python" />
+          <img src="/vite-react-deploy/tech/sql.png" alt="SQL" />
+          <img src="/vite-react-deploy/tech/javascript.png" alt="JavaScript" />
+          {/* Repeat for seamless loop */}
+          <img src="/vite-react-deploy/tech/react.png" alt="React" />
+          <img src="/vite-react-deploy/tech/typescript.png" alt="TypeScript" />
+          <img src="/vite-react-deploy/tech/nodejs.png" alt="Node.js" />
+        </div>
+      </section>
 
       <section className="after-hero">
         {/* Background is applied here */}
