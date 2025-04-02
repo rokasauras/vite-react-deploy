@@ -116,8 +116,10 @@ section p {
 .projects-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* responsive base */
   padding-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .project-card {
@@ -245,6 +247,47 @@ section p {
 .spacer {
   height: 100vh;
   background: linear-gradient(to bottom, red, yellow);
+}
+
+.projects-section {
+  padding-top: 6rem; /* Adjust based on your fixed header height */
+  padding-bottom: 2rem;
+}
+
+/* Toggle button (hamburger) */
+.menu-toggle {
+  display: none;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    background: rgba(20, 20, 20, 0.95);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
 }
 
 @keyframes fade-out {

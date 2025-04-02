@@ -2,7 +2,7 @@ import ImageCarousel from '../components/ImageCarousel';
 
 export default function Projects() {
   return (
-    <section>
+    <section className="projects-section" >
       <h1>PROJECTS</h1>
       <div className="projects-grid">
 

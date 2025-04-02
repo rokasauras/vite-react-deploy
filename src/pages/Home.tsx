@@ -47,7 +47,7 @@ export default function Home() {
         {/* Background is applied here */}
         <div className="main-content">
           <h2>Scroll Section</h2>
-          <p>This content will be for Projects and Blogs</p>
+          <p>This content will be for featured Projects and Blogs</p>
         </div>
       </section>
     </>
