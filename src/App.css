@@ -35,7 +35,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(34, 34, 34, 0.6); /* translucent version of #222 */
+  background-color: rgba(34, 34, 34, 0.01); /* translucent version of #222 */
   backdrop-filter: blur(8px);              /* adds subtle glassy effect */
   -webkit-backdrop-filter: blur(8px);      /* Safari support */
   padding: 1rem 0;
