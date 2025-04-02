@@ -116,10 +116,12 @@ section p {
 .projects-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* responsive base */
-  padding-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+  padding: 1rem;
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .project-card {
@@ -129,6 +131,9 @@ section p {
   border-radius: 8px;
   text-align: left;
   transition: 0.2s ease;
+  width: 100%;             /* Prevent overflow */
+  max-width: 100%;         /* Prevent content expanding too far */
+  box-sizing: border-box;  /* Respect padding */
 }
 
 .project-card:hover {
@@ -262,6 +267,13 @@ section p {
   border: none;
   color: #fff;
   cursor: pointer;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
 
 /* Responsive nav */
