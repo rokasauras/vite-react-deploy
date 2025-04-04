@@ -125,7 +125,7 @@ section p {
 }
 
 .project-card {
-  background: #1e1e1e;
+  background: #272C37;
   border: 1px solid #333;
   padding: 1.5rem;
   border-radius: 8px;
@@ -137,7 +137,7 @@ section p {
 }
 
 .project-card:hover {
-  background-color: #2a2a2a;
+  background-color: #1A3C24;
 }
 
 /* --- Hero Section --- */
@@ -365,3 +365,5 @@ section p {
     transform: translateX(-50%);
   }
 }
+
+
