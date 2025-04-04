@@ -83,21 +83,46 @@ export default function Projects() {
 
 
         <div className="project-card">
-            <h3>PLACEHOLDER</h3>
-            <p>Python, OCR, Streamlit — Automated document parsing for bank statements.</p>
-            <ImageCarousel images={[
-              "/vite-react-deploy/images/ai-scanner/1.png",
-              "/vite-react-deploy/images/ai-scanner/2.png"
-            ]} />
+          <h3>Bee Parsing Dashboard (In Development)</h3>
+          <p>
+            A custom analytics dashboard built using React and Vite, focused on modular architecture, clean data presentation, and scalable component structure. Designed to visualise customer insights, automate reporting, and support decision-making in data-driven environments.
+          </p>
+          <p style={{ marginTop: "1rem" }}>
+            🛠️ <em>Showcases proficiency in TypeScript, React, Node.js and UI product design.</em>
+          </p>
+
+          <ImageCarousel images={[
+            "/vite-react-deploy/images/bp/1.png"
+          ]} />
         </div>
 
+
         <div className="project-card">
-            <h3>PLACEHOLDER</h3>
-            <p>Python, OCR, Streamlit — Automated document parsing for bank statements.</p>
-            <ImageCarousel images={[
-              "/vite-react-deploy/images/ai-scanner/1.png",
-              "/vite-react-deploy/images/ai-scanner/2.png"
-            ]} />
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            Designed and developed a personal portfolio to showcase my work as a full-stack developer and data scientist. Built with React and Vite, the site demonstrates modern UI/UX principles, responsive design, and seamless navigation.
+          </p>
+          <p style={{ marginTop: "1rem" }}>
+            🌐 <a
+              href="https://rokasauras.github.io/vite-react-deploy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit the live website
+            </a>
+            &nbsp;|&nbsp;
+            🔗 <a
+              href="https://github.com/rokasauras/vite-react-deploy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
+          </p>
+
+          <ImageCarousel images={[
+            "/vite-react-deploy/images/port/1.png"
+          ]} />
         </div>
       </div>
     </section>
