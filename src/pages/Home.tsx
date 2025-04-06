@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import ImageCarousel from '../components/ImageCarousel';
+import { Link } from 'react-router-dom';
 
 
 export default function Home() {
@@ -127,7 +128,16 @@ export default function Home() {
                   "/vite-react-deploy/images/fybc/3.png"
                 ]} />
               </div>
-    
+
+              {/* See more link */}
+              <div style={{ textAlign: "center", marginTop: "2rem", gridColumn: "1 / -1" }}>
+                <Link to="/projects" style={{ color: "#66ccff", textDecoration: "none", fontWeight: 500, fontSize: "1rem" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
+                  onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
+                >
+                  See more projects
+                </Link>
+              </div>
             </div>
           </div>
         </section>
