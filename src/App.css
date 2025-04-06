@@ -137,14 +137,16 @@ section p {
   padding: 1.5rem;
   border-radius: 8px;
   text-align: left;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.3s ease;
   display: flex; 
   flex-direction: column;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 
 }
 
 .project-card:hover {
-  background-color: #1A3C24;
+  background-color: #09471c;
+  box-shadow: 0 0 35px 8px rgba(2, 185, 41, 0.2);
 }
 
 /* --- Hero Section --- */
