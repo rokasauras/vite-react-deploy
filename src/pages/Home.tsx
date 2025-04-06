@@ -57,6 +57,9 @@ export default function Home() {
             <img src="/vite-react-deploy/tech/react.png" alt="React" />
             <img src="/vite-react-deploy/tech/typescript.png" alt="TypeScript" />
             <img src="/vite-react-deploy/tech/nodejs.png" alt="Node.js" />
+            <img src="/vite-react-deploy/tech/python.png" alt="Python" />
+            <img src="/vite-react-deploy/tech/sql.png" alt="SQL" />
+            <img src="/vite-react-deploy/tech/javascript.png" alt="JavaScript" />
           </div>
         </section>
     
@@ -131,9 +134,9 @@ export default function Home() {
 
               {/* See more link */}
               <div style={{ textAlign: "center", marginTop: "2rem", gridColumn: "1 / -1" }}>
-                <Link to="/projects" style={{ color: "#66ccff", textDecoration: "none", fontWeight: 500, fontSize: "1rem" }}
-                  onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
-                  onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
+                <Link
+                  to="/projects"
+                  className="see-more-link"
                 >
                   See more projects
                 </Link>

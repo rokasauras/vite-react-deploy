@@ -12,7 +12,9 @@ export default function App() {
     <>
       <header className="app-header">
         <div className="header-inner">
-          <h1 className="site-title">PORTFOLIO</h1>
+          <Link to="/" className="site-title" style={{ textDecoration: 'none', color: 'inherit' }}>
+            PORTFOLIO
+          </Link>
 
           {/* Mobile toggle */}
           <button
